@@ -1,0 +1,114 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "manrope";
+}
+@font-face {
+    font-family: "manrope";
+    src: url(../font/Manrope/Manrope-VariableFont_wght.ttf);
+}
+:root
+{
+    /* COLORS */
+    --lightCyan-clr: #cee3e9;
+    --neonGreen-clr:  #52ffa8;
+    --grayishBlue-clr: #4e5d73;
+    --darkGrayishBlue-clr: #323a49;
+    --darkBlue-clr: #1f2632;
+    /* FONTSIZE */
+    --fontSize-28px: 28px;
+    /* FONTWEIGHT */
+    --fontWeight-800: 800;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--darkBlue-clr);
+}
+.card-container
+{
+    width: 540px;
+    background-color: var(--darkGrayishBlue-clr);
+    position: relative;
+    border-radius: 10px;
+    margin: 12% auto;
+    box-shadow: 30px 50px 80px 0 rgba(0, 0, 0, 0.122);
+    padding: 48px 48px 72px 48px;
+}
+.card-container .advice-number
+{
+    color: var(--neonGreen-clr);
+    font-weight: var(--fontWeight-800);
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.card-container .advice-text
+{
+    color: var(--lightCyan-clr);
+    font-weight: var(--fontWeight-800);
+    text-align: center;
+    font-size: var(--fontSize-28px);
+    line-height: 38.25px;
+    margin-bottom: 40px;
+}
+.ornament .long
+{
+    width: 196px;
+    height: 1px;
+    background-color: var(--grayishBlue-clr);
+}
+.ornament .round
+{
+    height: 16px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--lightCyan-clr);
+}
+.ornament
+{
+    margin-bottom: 40px;
+}
+.dicee
+{
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--neonGreen-clr);
+    padding: 20px;
+    width: 64px;
+    height: 64px;
+    /* left: 238px; */
+    left: 45%;
+    bottom: -32px;
+    transition: 0.3s;
+}
+.dicee:hover
+{
+    box-shadow: #52ffa8 0 0 40px 0;
+    transition: 0.3s;
+}
+@media screen and (max-width: 800px)
+{
+    body
+    {
+        padding: 16px;
+    }
+    .card-container
+    {
+        width: 100%;
+        margin-top: 400px;
+    }
+}
