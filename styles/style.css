@@ -13,15 +13,12 @@
 }
 :root
 {
-    /* COLORS */
     --lightCyan-clr: #cee3e9;
     --neonGreen-clr:  #52ffa8;
     --grayishBlue-clr: #4e5d73;
     --darkGrayishBlue-clr: #323a49;
     --darkBlue-clr: #1f2632;
-    /* FONTSIZE */
     --fontSize-28px: 28px;
-    /* FONTWEIGHT */
     --fontWeight-800: 800;
 }
 .flex
@@ -90,7 +87,6 @@ body
     padding: 20px;
     width: 64px;
     height: 64px;
-    /* left: 238px; */
     left: 45%;
     bottom: -32px;
     transition: 0.3s;
@@ -109,7 +105,7 @@ body
     .card-container
     {
         width: 100%;
-        margin-top: 100px;
-        /* margin-top: -800px; */
+        position: relative;
+        top: 20%;
     }
 }

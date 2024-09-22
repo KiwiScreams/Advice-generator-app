@@ -5,7 +5,6 @@ const getPosts = async () =>
 {
     const response = await fetch("https://api.adviceslip.com/advice");
     const data = await response.json();
-    console.log(data);
     advice_number.innerHTML =  "#" + data.slip.id;
     advice_text.innerHTML = '"' + data.slip.advice + '"';
 }
